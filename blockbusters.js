@@ -140,7 +140,13 @@ console.log(movies[lastMovie].actors[lastActor])
 // Zorg dat je de onderstaande variabele gebruikt en pas eventueel het entry-nummer aan,
 // om te kijken of je algoritme ook werkt wanneer je een andere film selecteert!
 
-const selectedMovie = movies[0];
+const selectedMovie = movies[5];
+if (selectedMovie.rating > 8) {
+  console.log("Uitstekende film!!")
+} else {
+  console.log("Goede film!")
+}
+console.log("-----------------------");
 
 // Verwacht antwoord bij 'const selectedMovie = movies[0]':
 // Uitstekende film!!
@@ -165,3 +171,11 @@ const selectedMovie = movies[0];
 // Verwacht antwoord bij 'const selectedMovie = movies[5]':
 // Matige film
 
+console.log("Opdracht 4b");
+if (selectedMovie.rating > 8) {
+  console.log("Uitstekende film!!")
+} else if (selectedMovie.rating > 6 && selectedMovie.rating <= 8) {
+  console.log("Goede film")
+} else {
+  console.log("Matige film")
+}
